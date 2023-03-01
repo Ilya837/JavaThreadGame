@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.threadpanelfx.MainCont">
+   <children>
+      <Pane maxHeight="-Infinity" layoutX="0.0" layoutY="0.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Rectangle fill="DODGERBLUE" layoutX="0.0" layoutY="0.0" width="30" height="500"></Rectangle>
+            <Circle fx:id="littleCircle" fill="DODGERBLUE" layoutX="360.0" layoutY="250.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="bigCircle" fill="DODGERBLUE" layoutX="450.0" layoutY="250.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Arrow" points="0,13,20,13,20,5,30,15,20,25,20,17,0,17" layoutX="35" layoutY="235"></Polygon>
+         </children>
+      </Pane>
+      <Pane maxHeight="-Infinity" style="-fx-background-color: #cccccc;-fx-border-color: #000000" layoutX="0.0" layoutY="500.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="501.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#runCircle" text="Start" />
+            <Button layoutX="100.0" layoutY="14.0" mnemonicParsing="false" onAction="#stopCircle" text="Stop" />
+            <Button layoutX="200.0" layoutY="14.0" mnemonicParsing="false" onAction="#piu" text="hit" />
+         </children>
+      </Pane>
+
+      <Pane maxHeight="-Infinity" style="-fx-background-color: #cccccc; -fx-border-color: #000000" layoutX="500" layoutY="0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="20" layoutY="20" text="Выстрелов :"></Label>
+            <Label fx:id="arrowCount" layoutX="100" layoutY="20" text="0" ></Label>
+            <Label layoutX="20" layoutY="80" text="Попаданий :"></Label>
+            <Label fx:id="hitCount" layoutX="100" layoutY="80" text="0" ></Label>
+         </children>
+      </Pane>
+
+   </children>
+</Pane>
